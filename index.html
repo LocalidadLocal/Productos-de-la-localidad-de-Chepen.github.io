@@ -74,11 +74,11 @@
     <section class="spot">
         <h2>Descubre nuestro Spot</h2>
         <video controls width="100%" id="miVideo">
-            <source src="k.mp4" type="video/mp4">
+            <source src="o.mp4" type="video/mp4">
             Tu navegador no soporta el tag de video.
         </video>
         <p class="descargar" id="descargar">
-            <a href="k.mp4" download>Descargar Video</a>
+            <a href="o.mp4" download>Descargar Video</a>
         </p>
         <button onclick="compartirVideo()">Compartir Video</button>
         <p>¡Bienvenido a nuestro spot! Aquí encontrarás información relevante sobre nuestros productos y servicios.</p>
@@ -88,8 +88,8 @@
     <script>
         document.getElementById("descargar").addEventListener("click", function() {
             var link = document.createElement("a");
-            link.href = "k.mp4";
-            link.download = "k.mp4";
+            link.href = "o.mp4";
+            link.download = "o.mp4";
             link.click();
         });
 
@@ -99,7 +99,7 @@
             navigator.share({
                 title: "Compartir Video",
                 text: "Mira este increíble video",
-                url: url
+                url: "https://andy13pro.github.io/mercantile.github.io/"
             })
             .then(() => console.log('Video compartido con éxito'))
             .catch((error) => console.error('Error al compartir', error));
